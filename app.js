@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '/dist/corona-app')));
 
-app.use('/', indexRouter);
+// app.use('/', indexRouter);
 app.use('/country', countryRouter);
 
 // catch 404 and forward to error handler
